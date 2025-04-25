@@ -1,0 +1,63 @@
+# tools by mjoeyx
+# File konfigurasi Kali
+# 20/04/2025 
+# TELEGRAM : https://t.me/mj0ey
+
+# Menentukan warna
+RED='\e[91m'
+GREEN='\e[92m'
+YELLOW='\e[93m'
+BLUE='\e[94m'
+MAGENTA='\e[95m'
+CYAN='\e[96m'
+RESET='\e[0m'
+
+# Menghapus Layar
+clear
+
+function banner () {
+echo -e "${CYAN}======================================="
+echo -e "${YELLOW}        Nethunter_Installer        "
+echo -e "${CYAN}======================================="
+echo -e "${GREEN}  Script by: ${MAGENTA}Mjoeyx"
+echo -e "${BLUE}  Telegram: ${RED}https://t.me/mj0ey"
+echo -e "${CYAN}=======================================${RESET}"
+sleep 2
+}
+function installing_package () {
+pkg up -y
+pkg install -y wget curl openssh php
+clear
+sleep 10
+}
+function file_permission () {
+termux-setup-storage
+mv kali.sh /data/data/com.termux/files/home/storage
+chmod +x /data/data/com.termux/files/home/storage/kali.sh
+bash /data/data/com.termux/files/home/storage/kali.sh
+clear
+sleep 10
+}
+function updatekali(){
+sudo apt-get update -y
+clear
+echo -e "${red} Kali Package Update | Mencoba meningkatkan penuh "
+sleep 5
+sudo apt-get full-upgrade -y
+clear
+echo -e "${red} [*] Proses peningkatan penuh Selesai "
+sleep 3
+}
+banner
+installing_package
+banner
+file_permission
+banner
+updatekali
+# Hapus Layar
+clear
+echo -e "${BLUE} Pemasangan Nethunter Berhasill"
+echo -e "${GREEN} Ke Channel Telegram"
+termux-open https://t.me/mjcx0?sub_confirmation=1
+sleep 30
+clear 
