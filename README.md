@@ -37,7 +37,7 @@ git clone https://github.com/mjoeyx/kalimjc && cd kalimjc
 ```bash
 chmod +x kalimjc.sh setup
 ```
-9. Execute the setup scrip.
+9. Eksekusi script.
 ```bash
 ./setup
 ```
