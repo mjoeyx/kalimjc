@@ -46,8 +46,4 @@ Ikuti petunjuk atau instruksi apa pun yang muncul selama proses instalasi.
 
 ## Disclaimer
 
-Skrip ini disediakan seadanya dan tanpa jaminan. Gunakan dengan risiko Anda sendiri. Pastikan untuk meninjau dan memahami perintah dalam script sebelum menjalankannya. Selalu mengunduh Script dari sumber tepercaya ..
-
-## License
-
-**This script is licensed under the [MIT License](LICENSE).**
+Skrip ini disediakan seadanya dan tanpa jaminan. Gunakan dengan risiko Anda sendiri. Pastikan untuk meninjau dan memahami perintah dalam script sebelum menjalankannya.
